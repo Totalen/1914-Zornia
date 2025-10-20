@@ -1,0 +1,598 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "Zornia WIP",
+            "summary": "<p style=\"font-family: Courier New\"\n\"><b>It is the dawn of the year 1914.</b></p>\n\n<p style=\"font-family: Courier New\"><b>As we enter the third chapter of Zornia's young democracy, not much has changed since the Glorious Revolution. Despite President's Avolor best efforts, the economic situation of the country is dire, internal stability is in precarious position and parlament barely functions. Despite it, or perhaps because of it, the political life is thriving and blossoming on the whole spectrum.<b></p>\n\n<p><strong> Except for the Zornian National Front.</strong></p>",
+            "image_url": "https://media.discordapp.net/attachments/958466913166557207/1350903389332177079/test.png?ex=67d91712&is=67d7c592&hm=b06e4a27a7f8d01b6253af3fce80b5bd3e124d992dffcde02dfe49b0d55eee2b&=&format=webp&quality=lossless",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg",
+            
+        }
+    }
+]
+quotes = [`"For weak nations have never triumphed, and history never rehabilitated them." - People's Observer`, `"Zornia is stronger than the forces that oppose her, and only united we can beat back the forces of hate" - National Times`, `"We [...] in fact believe wholeheartedly that this disgusting treatment is the best any worker can expect in President Avolor's Zornia" - National Liberal`, `"Liberty stands against tyranny and anarchy" - Liberty`, `"Workers, keep standing, workers, keep fighting, because this country belongs to us and us alone!" - Tribune`, `"In this turbulent time of Zornia, it is imperative that we not abandon stability and order in favor of discord and disunity." - Zornian Times`]
+customquote = quotes[Math.floor((Math.random() * quotes.length))]
+corrr=`\n<h2>Phönix oder Ruine?</h2><font id='wittyquote' size='' color='white'><em>`+customquote+`</em></font>`
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "Zornia WIP"
+    }
+]
+
+campaignTrail_temp.credits = "<p style=\"font-family: Courier New\" \">Totalen</p>"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 200,
+        "fields": {
+            "first_name": "",
+            "last_name": "ZNF",
+            "election": 20,
+            "party": "Zornian National Front",
+            "state": "AL",
+            "priority": 1,
+            "description": "<p style=\"font-family: Courier\"\n\"><b>It is not broken in pieces, not even in half. It's death is not because of incompetency, but of its pure silence.</b></p>\n\n<p style=\"font-family: Courier New\"\n\">Founded like all the others in 1911, the Front was destined for greatness. A party uniting both radical nationalists, old nobles, middle class and monarchists still clinging towards the old system. But it wasn't meant to be. First the shooting of von Sternberg dealt a blow towards the party morale and unity, and later the utter incompetency of the premilitancy PPZ meant the toothless LUZ advanced to the second round of Presidential elections, instead of von Hessen.</p>\n<p style=\"font-family: Courier New\"\n\">And thus, the ZNF rapidly decayed into a shadow of what it could be. No longer it could fight for the biggest prizes, now it had to survive despite everyone's best attempts at killing it off from good. However, there is one man who wants to stop the decay...</p>",
+            "color_hex": "#303030",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Stanislau",
+            "last_name": "Katze",
+            "election": 20,
+            "party": "ZNF",
+            "state": "Natolia",
+            "priority": 1,
+            "description": "i am literally cat-mackiewicz bros",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Stanis%C5%82aw_Cat-Mackiewicz.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p><i>\"In Zornia, the people fear to speak the truth most obvious, if this truth goes against the beloved nonsense, for which the whole society lauds for.\" - Stanislau Katze, in the halls of the Parlament c. 1913</i><p>\n\nBorn in a half-Tanian, half-Zornian family, Stanislau's upbringing was rather calm. His status as first son helped him get an education and he himself earned Journalism and Law Degrees at Zornhold University, which he later used to found his own newspaper, the <i>Sternberg Overview</i>. With Natolia's lack of proper right-wing discourse before him, he was able to sustain his operations well.\n\n<p>During the Revolution, he stayed silent: but when the dust settled he joined the freshly born Zornian National Front and was elected to parlament. While his position of a backbencher is not significant, ZNF cadres are demoralized...",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 201,
+        "fields": {
+            "first_name": "",
+            "last_name": "CCP",
+            "election": 20,
+            "party": "Cintharian Cultivation Party",
+            "state": ": Cinthar is live",
+            "priority": 1,
+            "description": "PRAISE CINTHAR AAAAAAQAAAA",
+            "color_hex": "#914800",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50008,
+        "fields": {
+            "first_name": "moreau",
+            "last_name": "",
+            "election": 20,
+            "party": "ccp",
+            "state": "grozana i think",
+            "priority": 1,
+            "description": "did i stutter?",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "work",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 202,
+        "fields": {
+            "first_name": "",
+            "last_name": "Kemal",
+            "election": 20,
+            "party": "KEMAL",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "we are ersatz personality cult",
+            "color_hex": "#400080",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50010,
+        "fields": {
+            "first_name": "ersatz",
+            "last_name": "",
+            "election": 20,
+            "party": "kemal",
+            "state": "elyria",
+            "priority": 1,
+            "description": "i am adolf hitler commander of the third reich  little known fact also dope on the mic",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "i am ah dope on ze mic",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 20761,
+        "fields": {
+            "first_name": "",
+            "last_name": "Zentrum",
+            "election": 20,
+            "party": "centre",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "We are actually competent centrism",
+            "color_hex": "#022e80",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50012,
+        "fields": {
+            "first_name": "",
+            "last_name": "bagabundi",
+            "election": 20,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": "piłsudski bros, we love this guy!",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "woke",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 203,
+        "fields": {
+            "first_name": "",
+            "last_name": "ZLP",
+            "election": 20,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": "libs",
+            "color_hex": "#cca400",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50014,
+        "fields": {
+            "first_name": "anzetha",
+            "last_name": "curre",
+            "election": 20,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": "liberal zornian",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 20775,
+        "fields": {
+            "first_name": "",
+            "last_name": "LUZ",
+            "election": 20,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": "we are woke liberals",
+            "color_hex": "#0d8e23",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50016,
+        "fields": {
+            "first_name": "",
+            "last_name": "schultz",
+            "election": 20,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": "frankly idk and idc",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 20789,
+        "fields": {
+            "first_name": "",
+            "last_name": "PPZ",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "We love Braunism",
+            "color_hex": "#800000",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50018,
+        "fields": {
+            "first_name": "georg",
+            "last_name": "halzauer",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "some random guy who somehow turned politics upside down",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "some rando who managed to become a big figure",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 121089,
+        "fields": {
+            "candidate": 201,
+            "running_mate": 50008
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 115735,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 50000
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 121902,
+        "fields": {
+            "candidate": 202,
+            "running_mate": 50010
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 163541,
+        "fields": {
+            "candidate": 20761,
+            "running_mate": 50012
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 161834,
+        "fields": {
+            "candidate": 203,
+            "running_mate": 50014
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 91753,
+        "fields": {
+            "candidate": 20775,
+            "running_mate": 50016
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 133570,
+        "fields": {
+            "candidate": 20789,
+            "running_mate": 50018
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            202,
+            20761,
+            203,
+            20775,
+            20789
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            202,
+            20761,
+            203,
+            20775,
+            20789
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#3b3b3b",
+    "windowColor": "#81968f",
+    "containerColor": "#969696",
+    "innerWindowColor": "#d5d5d5",
+    "bannerImageUrl": "https://live.staticflickr.com/2893/9380750353_2ce2372d37_b.jpg",
+    "backgroundImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Regimentshaus_des_Danziger_Infanterie-Regiments_Nr._128.JPG/1920px-Regimentshaus_des_Danziger_Infanterie-Regiments_Nr._128.JPG",
+    "endingTextColor": "#000000",
+    "customQuote": ""
+}
+
+function addDynamicCSS() {
+    var css = `
+        .inner_window_question h3 .mytooltip{
+            background-color: lightgrey;
+        }
+
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: grey;
+        }
+
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background-color: darkgrey;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    `;
+
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
+}
+
+
+addDynamicCSS();
+
+tooltipList = [
+    {searchString: "Karl Wagner", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/de/thumb/8/85/Ferdinand_Miltner.jpg/220px-Ferdinand_Miltner.jpg> The 4th nominee to the Zornian Supreme Court. A centrist without any vision besides stability for the country. "},
+    {searchString: "Cinthar", explanationText: "<img src=https://media.discordapp.net/attachments/1284022509175439400/1295408969338192013/Bez_nazwy.jpg?ex=67e9641d&is=67e8129d&hm=ca216f5fc465b992c4ab8f968cb3e528ec62c1dcf7b6c9a94eb6638b36025738&=&format=webp> The Guardian of the Sun. Praise Him!"},
+	{searchString: "Braunists", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/7/70/Marchers_with_banners_supporting_the_1910_Chicago_Cloakmakers_strike_share_the_street_with_trolleys%2C_autombiles%2C_musicians_and_others._%285279767738%29.jpg> The followers of a murderous ideology, promising 'equality' and 'peace' over the blood of those chosen by Cinthar or their capability. "},
+    {searchString: "Andreas Coeler", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/G%C3%BCnther_Gereke_1932.jpg/250px-G%C3%BCnther_Gereke_1932.jpg> Andreas Coeler, head of the People's National Reform Party (VNRP). The most mainsteam out of the right-wing too radical for the ZNF, and the first man likely to choose entryism if opportunity given. "},
+    {searchString: "Stadtnick", explanationText: "<img src=https://s.lubimyczytac.pl/upload/authors/63585/63367-352x500.jpg> <br>Your closest associate and fellow ZNF representative from Natolia. While he is useful to you as he is efficient, you are personally repelled by his... extravagancy."},
+    {searchString: "August 12th Group", explanationText: "<img src=https://media.istockphoto.com/id/996601298/vector/daily-calendar-of-single-leaf-rings-red-spine-3d-illustration-day-august-twelfth-12th.jpg?s=612x612&w=0&k=20&c=sCP1Y0Tt9_KMbyl8OkMul2Z8GLYRd6GlSK19rfN9h5k=> August 12th Group, lead by Klaus von Keinenschloss and his cronies, is the main Volkovian branch of our party. Most of their supporters are to be found within youth organisations, which lost the least enthusiasm during 1913."}
+        
+];
+//#startcode
+
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#3b3b3b";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#81968f";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#969696";
+
+document.getElementById("header").src = "https://live.staticflickr.com/2893/9380750353_2ce2372d37_b.jpg";
+
+document.body.background = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Regimentshaus_des_Danziger_Infanterie-Regiments_Nr._128.JPG/1920px-Regimentshaus_des_Danziger_Infanterie-Regiments_Nr._128.JPG";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#d5d5d5!important;}</style>";
+
+document.getElementById("inner_window_1").children[0].innerHTML = `<h3><style>
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style> <a href="https://archiveofourown.org/works/70245086#work_endnotes">May Cinthar Bless Zornia!</a></h3>`
+document.getElementById("game_start").children[0].innerHTML = `<strong>Walk into the abyss that is our country.</strong>`
+document.getElementById("inner_window_1").children[1].innerHTML = `<li>Welcome to <span style="color:DarkOrchid;">Zor</span><span style="color:Black;">nia.</span></li><li>They deem this country "the land of opportunity".</li><li>Hmm, not much after 1912, it seems.</li><li>Come forward, traveller, and look what lies within.</li><p style="text-align:center;">Content Warning: This work contains themes of racism, sexism, opportunism, corruption and moral relitivity. It does not strictly follow Zornia's timeline. </p><li>You’ve been warned.</li>`;
+document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
+document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
+document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
+//#endcode
